@@ -1,0 +1,180 @@
+body {
+    font-family: "Playfair Display", serif;
+    background-color: rgba(255, 255, 255, 0.767);
+}
+header{
+    background-color: rgb(221, 238, 255);
+}
+#logo{
+    display: block; 
+    line-height: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DDEEFF;
+    padding: 10px 20px;
+}
+.navbar-left .logo {
+    height: 40px;
+}
+.navbar-right a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.navbar-right a:hover {
+    color:  #BCB0DC;
+}
+footer{
+    margin-top: 2;
+    background-color: #DDEEFF; 
+    text-align: center;
+    font-size: 17px;
+}
+.social-icons{ 
+    margin: 10px, 0px ;
+    padding: 10px;
+}
+.social-icons a {
+    margin: 10px;
+    text-decoration: none;
+}
+.insta{
+    width: 5vh;
+    height: 5vh;
+}
+.fb{
+    width: 5vh;
+    height: 5vh;
+}.yt{
+    width: 5vh;
+    height: 5vh;
+}.tw{
+    width: 5vh;
+    height: 5vh;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+}
+.galeria_columna {
+    flex: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+.imagenes_rec{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle;
+    padding: 20px 20px;
+}
+.imagenes_rec:hover {
+    opacity: 0.5;
+}
+/* Hace 2 columnas cuando el ancho de la pantalla es 1300px o menos*/
+@media only screen and (max-width: 1300px) {
+    .galeria_columna {
+      flex:50%;
+      max-width: 50%;
+    }
+  }
+/* Hace 1 sola columna cuando el ancho de la pantalla es 650px o menos*/
+@media only screen and (max-width: 650px) {
+    .galeria_columna {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } 
+.contenido{
+    width:100%;
+    display: flex; 
+    align-content: center;
+    justify-content:left; 
+}
+
+.imagen_marca {
+    padding: 25px;
+    align-content: center;
+}
+.texto_marca {
+    padding: 25px;
+    line-height: 150%;
+    text-align:left;
+    width: 100%;
+    align-content: center;
+}
+.categoria{
+    width: 300px; 
+    height: 400px; 
+    text-align:center;
+    padding: 20px 20px;
+}
+.categoria_img {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+}
+.round-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.categoria:hover {
+    opacity: 0.5;
+    padding: 20px black;
+}
+
+.p1{
+    background-color:#ECF6FF;
+    text-align: center;
+    font-size: 17px;
+    font-weight:bold;
+    padding:1em;
+    margin:0%;
+}
+h1{
+    font-family: Playfair Display;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    font-weight: 20;
+}
+.menu_horizontal{
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+}
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+}
+.menu_vertical li:hover{
+    background-color: #ECF6FF;
+}
+.menu_vertical li a{
+    display: block;
+    color: #bcb0dc;
+    padding: 15px 15px 15px 15px;
+    
+}
+.menu_vertical{
+    position:absolute;
+    display:none;
+    list-style:none;
+    width:200px;
+    background-color:#375a788d;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.menu_vertical li a{
+    display: block;
+    padding: 15px 20px;
+    color:white;
+    text-decoration: none;
+}
